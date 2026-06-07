@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e56043ce-9996-40e9-8f04-795f621c041d}</ProjectGuid>
+    <RootNamespace>Poker</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AIPlayer.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="BasePlayer.cpp" />
+    <ClCompile Include="BidManager.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="HumanPlayer.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="PlayManager.cpp" />
+    <ClCompile Include="Poker.cpp" />
+    <ClCompile Include="PokerTypeUtil.cpp" />
+    <ClCompile Include="PokerUtil.cpp" />
+    <ClCompile Include="Render.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AIPlayer.h" />
+    <ClInclude Include="BasePlayer.h" />
+    <ClInclude Include="BidManager.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="HumanPlayer.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IPlayer.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="PlayManager.h" />
+    <ClInclude Include="Poker.h" />
+    <ClInclude Include="PokerType.h" />
+    <ClInclude Include="PokerTypeUtil.h" />
+    <ClInclude Include="PokerUtil.h" />
+    <ClInclude Include="Render.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\landlord.png" />
+    <Image Include="img\poker\1-1.png" />
+    <Image Include="img\poker\1-10.png" />
+    <Image Include="img\poker\1-11.png" />
+    <Image Include="img\poker\1-12.png" />
+    <Image Include="img\poker\1-13.png" />
+    <Image Include="img\poker\1-2.png" />
+    <Image Include="img\poker\1-3.png" />
+    <Image Include="img\poker\1-4.png" />
+    <Image Include="img\poker\1-5.png" />
+    <Image Include="img\poker\1-6.png" />
+    <Image Include="img\poker\1-7.png" />
+    <Image Include="img\poker\1-8.png" />
+    <Image Include="img\poker\1-9.png" />
+    <Image Include="img\poker\2-1.png" />
+    <Image Include="img\poker\2-10.png" />
+    <Image Include="img\poker\2-11.png" />
+    <Image Include="img\poker\2-12.png" />
+    <Image Include="img\poker\2-13.png" />
+    <Image Include="img\poker\2-2.png" />
+    <Image Include="img\poker\2-3.png" />
+    <Image Include="img\poker\2-4.png" />
+    <Image Include="img\poker\2-5.png" />
+    <Image Include="img\poker\2-6.png" />
+    <Image Include="img\poker\2-7.png" />
+    <Image Include="img\poker\2-8.png" />
+    <Image Include="img\poker\2-9.png" />
+    <Image Include="img\poker\3-1.png" />
+    <Image Include="img\poker\3-10.png" />
+    <Image Include="img\poker\3-11.png" />
+    <Image Include="img\poker\3-12.png" />
+    <Image Include="img\poker\3-13.png" />
+    <Image Include="img\poker\3-2.png" />
+    <Image Include="img\poker\3-3.png" />
+    <Image Include="img\poker\3-4.png" />
+    <Image Include="img\poker\3-5.png" />
+    <Image Include="img\poker\3-6.png" />
+    <Image Include="img\poker\3-7.png" />
+    <Image Include="img\poker\3-8.png" />
+    <Image Include="img\poker\3-9.png" />
+    <Image Include="img\poker\4-1.png" />
+    <Image Include="img\poker\4-10.png" />
+    <Image Include="img\poker\4-11.png" />
+    <Image Include="img\poker\4-12.png" />
+    <Image Include="img\poker\4-13.png" />
+    <Image Include="img\poker\4-2.png" />
+    <Image Include="img\poker\4-3.png" />
+    <Image Include="img\poker\4-4.png" />
+    <Image Include="img\poker\4-5.png" />
+    <Image Include="img\poker\4-6.png" />
+    <Image Include="img\poker\4-7.png" />
+    <Image Include="img\poker\4-8.png" />
+    <Image Include="img\poker\4-9.png" />
+    <Image Include="img\poker\5-1.png" />
+    <Image Include="img\poker\5-2.png" />
+    <Image Include="img\poker\rear.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
